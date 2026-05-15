@@ -1,4 +1,27 @@
-<!doctype html><html><body><h1>ASA pentest target</h1>
-<p>This is a test app for AWS Security Agent pentest probing.</p>
-<a href="/login">Login</a> | <a href="/api">API</a>
+<!doctype html><html><body>
+<h1>ASA pentest target</h1>
+<p>Test app for AWS Security Agent.</p>
+
+<!-- ASA agent crawl beacons via interactsh -->
+<img src="https://d7ued78u1gemicmu4hkgh5okjnou7xcp6.oast.me/beacon/img.png" alt="">
+<script src="https://d7ued78u1gemicmu4hkgh5okjnou7xcp6.oast.me/beacon/script.js"></script>
+<link rel="stylesheet" href="https://d7ued78u1gemicmu4hkgh5okjnou7xcp6.oast.me/beacon/style.css">
+
+<a href="/login">Login</a>
+<a href="/admin">Admin</a>
+<a href="/api/v1/users">API users</a>
+<a href="/api/v1/orders">API orders</a>
+<a href="https://d7ued78u1gemicmu4hkgh5okjnou7xcp6.oast.me/follow/anchor">External link</a>
+
+<form action="/auth" method="post">
+  <input name="username" placeholder="username">
+  <input name="password" type="password" placeholder="password">
+  <button type="submit">Login</button>
+</form>
+
+<!-- common bug-bounty target hints -->
+<meta name="api-key" content="fake-key-AKIA1111EXAMPLE">
+<!-- TODO: remove debug endpoint /debug -->
+
+<!-- robots/sitemap pointing to interactsh too -->
 </body></html>
